@@ -6,21 +6,26 @@ print(item)
 
 
 
-def search(list,n):
+def search(data,n):
 
 	l = 0
 
-	u = len(list) - 1
+	u = len(data) - 1
 
 	while l <= u:
 
-		mid = l + u // 2
+		mid = (l + u) // 2
 
-		if list[mid] == n:
+		if data[mid] == n:
 			return True
 		else:
-			if list[mid] < n:
+
+			if data[mid] < n:
 				l = mid + 1
 			else:
 				u = mid - 1
 	return False
+
+
+a = search(item,56)
+print(a)

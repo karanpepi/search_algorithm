@@ -15,10 +15,10 @@ def sumCloseTo0(arr):
         if (temp < abs(sum)):
             sum = arr[i] + arr[j]
             a=arr[i];b=arr[j]
-        if(i>=j-1):
-            break
+        # if(i>=j-1):
+        #     break
     return "a %d, b %d, sum %d" %(a,b,sum)
  
-arr = [-500, -2, 8,500]
+arr = [1, 60, -10, 70, -80, 85]
 print(sumCloseTo0(arr))
 
